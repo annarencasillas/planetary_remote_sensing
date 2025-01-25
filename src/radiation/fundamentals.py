@@ -89,7 +89,7 @@ def brightness_temperature (radiance, band_center, band_width) :
     from scipy.optimize import fsolve
 
     # Use fsolve to find the temperature that gives a zero value for the integral
-    temperature_guess = 100  # Initial guess for the temperature in K
+    temperature_guess = 300  # Initial guess for the temperature in K
     brightnessTemp = fsolve(bandpass_integral, temperature_guess)
     
     return brightnessTemp
